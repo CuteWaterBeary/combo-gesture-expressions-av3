@@ -61,6 +61,7 @@ namespace Hai.ComboGesture.Scripts.Components
         public AnimationClip anim11_R;
 
         public bool enablePermutations; // Deprecated, old value used for migration
+        public string clipPrefix = "CGE_";
         public CgeActivityMode activityMode;
         public Motion anim10;
         public Motion anim20;

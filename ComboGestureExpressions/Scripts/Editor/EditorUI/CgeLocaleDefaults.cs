@@ -172,6 +172,7 @@ You should disable Vive Advanced Controls Analog if you are not sure of what you
         internal static string CGED_Higher_priority = "Dynamic Expressions at the top have a higher priority than the Dynamic Expressions at the bottom.";
         internal static string CGEC_MMD_compatibility_toggle_parameter = "MMD compatibility toggle parameter";
         internal static string CGEE_Mode = "Mode";
+        internal static string CGEE_ClipPrefix = "Clip Prefix";
         internal static string CGEC_Slowness_warning = "Synchronization can become slower after generating multiple times in a single Unity session.\nIf synchronization becomes too slow, please restart Unity.";
         internal static string CGEC_SynchronizationConditionsV2 = @"Synchronization will regenerate CGE's animator layers and generate animations.
 - Only layers starting with 'Hai_Gesture' will be affected.

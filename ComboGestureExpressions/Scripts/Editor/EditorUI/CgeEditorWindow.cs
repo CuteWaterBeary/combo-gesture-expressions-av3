@@ -233,8 +233,10 @@ namespace Hai.ComboGesture.Scripts.Editor.EditorUI
             if (_editorHandler.CurrentActivityMode() == ActivityEditorMode.SetFaceExpressions)
             {
                 GUILayout.BeginHorizontal();
+                EditorGUILayout.LabelField(new GUIContent(CgeLocale.CGEE_ClipPrefix), GUILayout.Width(60));
+                EditorGUILayout.PropertyField(_editorHandler.SpClipPrefix(), GUIContent.none);
                 GUILayout.Space(30);
-                EditorGUILayout.LabelField(new GUIContent(CgeLocale.CGEE_Mode), GUILayout.Width(100));
+                EditorGUILayout.LabelField(new GUIContent(CgeLocale.CGEE_Mode), GUILayout.Width(60));
                 EditorGUILayout.PropertyField(_editorHandler.SpActivityMode(), GUIContent.none, GUILayout.Width(250));
                 if (_editorHandler.GetActivity().activityMode == ComboGestureActivity.CgeActivityMode.Permutations)
                 {

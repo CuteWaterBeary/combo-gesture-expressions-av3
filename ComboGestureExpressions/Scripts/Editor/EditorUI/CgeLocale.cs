@@ -158,6 +158,7 @@ namespace Hai.ComboGesture.Scripts.Editor.EditorUI
         internal static string CGED_Higher_priority => LocalizeOrElse("CGED_Higher_priority", CgeLocaleDefaults.CGED_Higher_priority);
         public static string CGEC_MMD_compatibility_toggle_parameter => LocalizeOrElse("CGEC_MMD_compatibility_toggle_parameter", CgeLocaleDefaults.CGEC_MMD_compatibility_toggle_parameter);
         public static string CGEE_Mode => LocalizeOrElse("CGEE_Mode", CgeLocaleDefaults.CGEE_Mode);
+        public static string CGEE_ClipPrefix => LocalizeOrElse("CGEE_ClipPrefix", CgeLocaleDefaults.CGEE_ClipPrefix);
         public static string CGEC_Slowness_warning => LocalizeOrElse("CGEC_Slowness_warning", CgeLocaleDefaults.CGEC_Slowness_warning);
         public static string CGED_MissingParameterOnContact => LocalizeOrElse("CGED_MissingParameterOnContact", CgeLocaleDefaults.CGED_MissingParameterOnContact);
         public static string CGED_MissingParameterOnPhysBone => LocalizeOrElse("CGED_MissingParameterOnPhysBone", CgeLocaleDefaults.CGED_MissingParameterOnPhysBone);

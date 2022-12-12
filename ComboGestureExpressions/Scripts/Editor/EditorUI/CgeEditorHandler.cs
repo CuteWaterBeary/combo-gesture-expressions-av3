@@ -91,6 +91,7 @@ namespace Hai.ComboGesture.Scripts.Editor.EditorUI
         public SerializedProperty SpEditorTool() => _state.SerializedObject.FindProperty(nameof(ComboGestureActivity.editorTool));
         public SerializedProperty SpPreviewSetup() => _state.SerializedObject.FindProperty(nameof(ComboGestureActivity.previewAnimator));
         public SerializedProperty SpActivityMode() => _state.SerializedObject.FindProperty(nameof(ComboGestureActivity.activityMode));
+        public SerializedProperty SpClipPrefix() => _state.SerializedObject.FindProperty(nameof(ComboGestureActivity.clipPrefix));
         public SerializedProperty SpEnablePermutations() => _state.SerializedObject.FindProperty(nameof(ComboGestureActivity.enablePermutations));
         public SerializedProperty SpOneHandMode() => _state.SerializedObject.FindProperty(nameof(ComboGestureActivity.activityMode));
 
