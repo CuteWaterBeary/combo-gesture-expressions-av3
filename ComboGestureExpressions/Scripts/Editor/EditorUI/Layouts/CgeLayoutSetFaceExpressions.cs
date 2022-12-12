@@ -572,10 +572,10 @@ namespace Hai.ComboGesture.Scripts.Editor.EditorUI.Layouts
         {
             var animations = _editorHandler.AllDistinctAnimations();
             var folder = animations.Count > 0 ? AssetDatabase.GetAssetPath(animations[0]).Replace(Path.GetFileName(AssetDatabase.GetAssetPath(animations[0])), "") : "Assets/";
+            var propertyName = CgeActivityEditorDriver.Translations.ContainsKey(propertyPath) ? CgeActivityEditorDriver.Translations[propertyPath] : "NewAnimation";
+            var finalFilename = $"CGE_{propertyName}.anim";
 
-            var finalFilename = "CGE_NewAnimation__" + DateTime.Now.ToString("yyyy'-'MM'-'dd'_'HHmmss") + ".anim";
-
-            var finalPath = folder + finalFilename;
+            var finalPath = AssetDatabase.GenerateUniqueAssetPath(folder + finalFilename);
             var clip = new AnimationClip();
             AssetDatabase.CreateAsset(clip, finalPath);
             AssetDatabase.LoadAssetAtPath<AnimationClip>(finalPath);

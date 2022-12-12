@@ -7,7 +7,7 @@ namespace Hai.ComboGesture.Scripts.Editor.EditorUI
 {
     public class CgeActivityEditorDriver
     {
-        private static readonly Dictionary<string, string> Translations = new Dictionary<string, string>
+        public static readonly Dictionary<string, string> Translations = new Dictionary<string, string>
         {
             {"anim00", "No gesture"},
             {"anim01", "Fist"},
