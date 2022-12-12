@@ -9,6 +9,14 @@ namespace Hai.ComboGesture.Scripts.Editor.EditorUI.Layouts
 {
     public class CgeLayoutCommon
     {
+        public static class Styles
+        {
+          public static GUIStyle MiddleAligned = new GUIStyle("Label") { alignment = TextAnchor.MiddleCenter, clipping = TextClipping.Overflow};
+          public static GUIStyle MiddleAlignedBold = new GUIStyle("Label") { alignment = TextAnchor.MiddleCenter, clipping = TextClipping.Overflow, fontStyle = FontStyle.Bold};
+          public static GUIStyle LargeFont = new GUIStyle("Label") { fontSize = 20, richText = true};
+          public static GUIStyle NormalFont = new GUIStyle("Label") { richText = true};
+
+        }
         private readonly Action _repaintCallback;
         private readonly EeRenderingCommands _renderingCommands;
 
@@ -23,10 +31,10 @@ namespace Hai.ComboGesture.Scripts.Editor.EditorUI.Layouts
         public static Color LeftSymmetricalBg;
         public static Color RightSymmetricalBg;
         public static Color InconsistentBg;
-        public GUIStyle MiddleAligned;
-        public GUIStyle MiddleAlignedBold;
-        public GUIStyle LargeFont;
-        public GUIStyle NormalFont;
+        public GUIStyle MiddleAligned => Styles.MiddleAligned;
+        public GUIStyle MiddleAlignedBold => Styles.MiddleAlignedBold;
+        public GUIStyle LargeFont => Styles.LargeFont;
+        public GUIStyle NormalFont => Styles.NormalFont;
         public static Texture GuideIcon32;
         private bool _isSimulationOfProSkin = false;
 
@@ -56,10 +64,6 @@ namespace Hai.ComboGesture.Scripts.Editor.EditorUI.Layouts
                 RightSymmetricalBg = new Color(0.23f, 0.26f, 0.34f);
                 InconsistentBg = new Color(0.72f, 0.09f, 0.27f);
             }
-            MiddleAligned = new GUIStyle("Label") {alignment = TextAnchor.MiddleCenter, clipping = TextClipping.Overflow};
-            MiddleAlignedBold = new GUIStyle("Label") {alignment = TextAnchor.MiddleCenter, clipping = TextClipping.Overflow, fontStyle = FontStyle.Bold};
-            LargeFont = new GUIStyle("Label") {fontSize = 20, richText = true};
-            NormalFont = new GUIStyle("Label") {richText = true};
 
             if (_isSimulationOfProSkin)
             {
