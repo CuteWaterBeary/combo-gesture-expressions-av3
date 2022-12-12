@@ -32,3 +32,6 @@ VRC.SDKBase.Editor.BuildPipeline.csproj
 VRC.SDKBase.Editor.ShaderStripping.csproj
 LICENSE.meta
 README.md.meta
+AnimationViewer.meta
+ComboGestureExpressions.meta
+VisualExpressionsEditor.meta
